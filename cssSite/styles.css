@@ -1,0 +1,198 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    width: 100%;
+    background-color:  #343a40;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container {
+height: 100vh;
+display: flex;
+justify-content: space-between; /* Distribui os itens com espaço entre eles */
+align-items: center;
+padding: 0 50px; /* Adiciona um espaço lateral */
+}
+
+.circle {
+width: 200px; /* Ajusta o tamanho dos círculos */
+height: 200px;
+}
+
+.info {
+text-align: center; /* Centraliza o texto */
+margin: 0; /* Remove a margem */
+}
+
+.info h1 {
+font-size: 2.5rem; /* Ajusta o tamanho do texto */
+}
+
+.info p {
+font-size: 1.2rem;
+}
+
+.circle.blackwhite {
+background-color: #333;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+}
+
+.info {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.info h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info p {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.btn-cv {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.btn-cv:hover {
+    background-color: #343a40;
+}
+
+section {
+    padding: 50px;
+}
+
+.skills, .projects, .contact {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    background-color: #e9ecef;
+}
+
+.projects {
+    background-color: #b6babe;
+}
+
+.contact {
+    background-color: #ced4da;
+}
+
+footer {
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+.skill-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.skill-wrapper h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.skill-wrapper ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.skill-wrapper ul li {
+    font-size: 1rem;
+    color: #555;
+    margin-right: 15px;
+    margin-bottom: 10px; /* Espaço entre as linhas */
+    text-align: center; /* Centraliza o texto */
+}
+
+.skill-wrapper ul li img {
+    width: 50px; /* Tamanho da imagem */
+    height: 50px; /* Tamanho da imagem */
+    margin-top: 5px; /* Espaço entre o texto e a imagem */
+    display: block; /* Faz com que a imagem fique em uma nova linha */
+    margin-left: auto; /* Centraliza a imagem */
+    margin-right: auto; /* Centraliza a imagem */
+}
+
+.skill-wrapper-1 ul {
+    list-style-type: none; /* Remove os marcadores */
+    padding: 0; /* Remove o padding padrão da lista */
+}
+
+.skill-wrapper-1 ul li {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    align-items: center; /* Alinha verticalmente ao centro */
+    margin-bottom: 10px; /* Espaço entre as linhas */
+}
+
+.skill-wrapper-1 ul li img {
+    width: 50px; /* Tamanho da imagem */
+    height: 50px; /* Tamanho da imagem */
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
+}
+
