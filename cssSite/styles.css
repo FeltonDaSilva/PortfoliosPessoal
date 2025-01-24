@@ -428,3 +428,169 @@ footer {
 .contact-card:hover {
     transform: translateY(-5px);
 }
+
+/* ... demais estilos ... */
+
+header {
+    width: 100%;
+    background-color: #00008B;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.dark-mode header {
+    background-color: #ffd700;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap; /* Adicionado para quebrar os elementos em telas menores */
+    justify-content: center; /* Adicionado para centralizar os links da navbar em telas menores */
+
+}
+
+nav ul li {
+    margin-left: 20px;
+    white-space: nowrap; /* Evita que o texto quebre */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.dark-mode nav ul li a {
+    color: #ffffff;
+}
+.dark-mode nav ul li a:hover{
+   color: #ffd700;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0;
+}
+#theme-toggle:focus {
+    outline: none;
+}
+.dark-mode #theme-toggle {
+    color: #f0e68c;
+}
+
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px; /* Adiciona margem inferior para separar os itens */
+     
+    }
+
+    nav ul {
+        flex-direction: column; /* Garante que os itens da lista fiquem em coluna */
+    }
+
+    header {
+        flex-direction: column; /* Altera o header para coluna em telas menores */
+        text-align: center; /* Centraliza o título */
+        padding: 10px 20px; /* Ajusta o padding */
+
+    }
+     header h1 {
+        margin-bottom: 10px;
+    }
+    
+}
+/* ... seus outros estilos ... */
+
+/* Estilo do botão do menu */
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 0;
+    display: none; /* Escondido por padrão, será visível em telas menores */
+}
+.dark-mode .menu-toggle {
+    color: #f0e68c;
+}
+
+/* Visibilidade do menu */
+.navbar-nav {
+    display: flex; /* Mantém o menu visível em telas maiores */
+}
+
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block; /* Mostra o botão do menu em telas menores */
+    }
+
+     .navbar-nav {
+           display: none; /* Esconde a navegação por padrão em telas menores */
+           flex-direction: column;
+           position: absolute;
+           top: 100%; /* Posiciona abaixo do header */
+            left: 0;
+            width: 100%;
+           background-color: #00008B;
+           text-align: center;
+        }
+
+         .dark-mode .navbar-nav {
+             background-color: #ffd700;
+        }
+
+          .navbar-nav ul li {
+            margin-left: 0; /* Remove a margem esquerda dos itens */
+              padding: 10px;
+        }
+      .navbar-nav ul li a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #fff;
+      }
+     .navbar-nav ul li a:hover {
+          background-color: #333; /* Efeito hover */
+          color: #f0e68c;
+     }
+   .dark-mode .navbar-nav ul li a:hover {
+         background-color: #402e03;
+    }
+      .navbar-nav.active {
+        display: flex; /* Mostra a navegação quando a classe .active é adicionada */
+    }
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+         padding: 10px 20px;
+    }
+    header h1 {
+        margin-bottom: 0;
+    }
+}
+
+/* ... seus outros estilos ... */
+
