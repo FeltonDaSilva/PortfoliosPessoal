@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
+    <title>Portfolio</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="img/portfolio.ico" type="image/x-icon">
@@ -17,236 +17,228 @@
 
 <body class="light-mode">
 
-    <!-- Cabeçalho com links -->
+    <!-- Header with links -->
     <header>
-        <h1>Portfólio</h1>
+        <h1><i style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Portfólio Pessoal </i></h1>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Habilidades</a></li>
-                 <li><a href="#certifications">Certificações</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#contact">Contato</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li><button id="theme-toggle">
-                    <i class="fas fa-moon"></i>
-                </button></li>
+                        <i class="fas fa-moon"></i>
+                    </button></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção Home -->
-    <div class="container" id="home">
+    <div class="container" id="home" >
         <div class="circle red">
-
             <a href="https://github.com/Felton7JE" target="_blank" rel="noopener noreferrer">
-                <img src="img/gitazul.png" alt="Minha Imagem" class="github-img github-img-light">
-                <img src="img/gitamarelo.png" alt="Minha Imagem" class="github-img github-img-dark">
+                <img src="img/gitazul.png" alt="My Image" class="github-img github-img-light">
+                <img src="img/gitamarelo.png" alt="My Image" class="github-img github-img-dark">
             </a>
-
         </div>
         <div class="info">
             <h1 class="typing-effect"></h1>
             <p class="typed-text">
-                Desenvolvedor de softwares <br>
-                Estou em constante busca por desafios <br>
-                Que me permitam expandir <br>
-                Meu conhecimento e contribuir de forma <br>
-                Significativa.
+                Software developer <br>
+                I am constantly looking for challenges <br>
+                That allow me to expand <br>
+                My knowledge and contribute meaningfully.
             </p>
-            <button class="btn-cv fade-in">Baixar CV</button>
+            <a href="pdf/ptfeltoncv025.pdf" download="Felton-da-Silva-CV.pdf">
+                <button class="btn-cv fade-in">Download CV</button>
+            </a>
         </div>
-
         <section class="animations">
             <div class="animation animation-dark">
                 <div class="atom"></div>
             </div>
             <div class="animation animation-light">
-              <div class="atom"></div>
+                <div class="atom"></div>
             </div>
-          </section>
-
+        </section>
     </div>
 
 
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container py-5">
+            <div class="skills-grid">
+                <!-- Section 1: Frameworks -->
+                <div class="skill-wrapper">
+                    <h4>Frameworks</h4>
+                    <ul class="skill-list">
+                        <li>
+                            <img src="img/spring.png" alt="Spring Boot">
+                            <span>Spring Boot</span>
+                        </li>
+                        <li>
+                            <img src="img/fluter.png" alt="Flutter">
+                            <span>Flutter</span>
+                        </li>
+                        <li>
+                            <img src="img/bootstrap.png" alt="Bootstrap">
+                            <span>Bootstrap</span>
+                        </li>
+                        <li>
+                            <img src="img/react (1).png" alt="React.js">
+                            <span>React.js</span>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- Section 2: Programming Languages -->
+                <div class="skill-wrapper">
+                    <h4>Programming Languages</h4>
+                    <ul class="skill-list">
+                        <li>
+                            <img src="/img/java.png" alt="Java">
+                            <span>Java</span>
+                        </li>
+                        <li>
+                            <img src="/img/python.png" alt="Python">
+                            <span>Python</span>
+                        </li>
+                        <li>
+                            <img src="/img/html.png" alt="HTML">
+                            <span>HTML, CSS, JavaScript</span>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- Section 3: Databases -->
+                <div class="skill-wrapper">
+                    <h4>Databases</h4>
+                    <ul class="skill-list">
+                        <li>
+                            <img src="img/mysql.png" alt="MySQL">
+                            <span>MySQL/SQL</span>
+                        </li>
+                        <li>
+                            <img src="img/elephant.png" alt="PostgreSQL">
+                            <span>PostgreSQL</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Section 4: APIs and Tools -->
+                <div class="skill-wrapper">
+                    <h4>APIs and Tools</h4>
+                    <ul class="skill-list">
+                        <li>
+                            <img src="img/api.png" alt="API Restful">
+                            <span>API Restful</span>
+                        </li>
+                        <li>
+                            <img src="img/postman.png" alt="Postman">
+                            <span>Postman</span>
+                        </li>
+                        <li>
+                            <img src="img/android.png" alt="Android Studio">
+                            <span>Android Studio</span>
+                        </li>
+                        <li>
+                            <img src="img/logo.png" alt="Visual Studio Code">
+                            <span>Visual Studio Code</span>
+                        </li>
+                    </ul>
+                </div>
 
+                <!-- Section 5: Office Tools -->
+                <div class="skill-wrapper">
+                    <h4>Office Tools</h4>
+                    <ul class="skill-list">
+                        <li>
+                            <img src="img/word.png" alt="Word">
+                            <span>Word</span>
+                        </li>
+                        <li>
+                            <img src="img/excel.png" alt="Excel">
+                            <span>Excel</span>
+                        </li>
+                        <li>
+                            <img src="img/powerpoint.png" alt="PowerPoint">
+                            <span>PowerPoint</span>
+                        </li>
+                    </ul>
+                </div>
 
-<!-- Seção Habilidades -->
-<section class="skills" id="skills">
-    <div class="container py-5">
-        <div class="skills-grid">
-            <!-- Seção 1: Frameworks -->
-            <div class="skill-wrapper">
-                <h4>Frameworks</h4>
-                <ul class="skill-list">
-                    <li>
-                        <img src="img/spring.png" alt="Spring Boot">
-                        <span>Spring Boot</span>
-                    </li>
-                    <li>
-                        <img src="img/fluter.png" alt="Flutter">
-                        <span>Flutter</span>
-                    </li>
-                    <li>
-                        <img src="img/bootstrap.png" alt="Bootstrap">
-                        <span>Bootstrap</span>
-                    </li>
-                    <li>
-                        <img src="img/react (1).png" alt="React.js">
-                        <span>React.js</span>
-                    </li>
-                </ul>
+                <!-- Section 6: Languages -->
+                <div class="skill-wrapper">
+                     <h4>Languages</h4>
+                    <ul class="skill-list">
+                         <li>
+                             <i class="fas fa-flag" style="color: #007bff; font-size: 25px; margin-right: 5px"></i>
+                             <span>Portuguese</span>
+                        </li>
+                         <li>
+                           <i class="fas fa-flag" style="color: #007bff; font-size: 25px; margin-right: 5px"></i>
+                            <span>English</span>
+                         </li>
+                    </ul>
+                </div>
             </div>
-
-            <!-- Seção 2: Linguagens de Programação -->
-            <div class="skill-wrapper">
-                <h4>Linguagens de Programação</h4>
-                <ul class="skill-list">
-                    <li>
-                        <img src="/img/java.png" alt="Java">
-                        <span>Java</span>
-                    </li>
-                    <li>
-                        <img src="/img/python.png" alt="Python">
-                        <span>Python</span>
-                    </li>
-                    <li>
-                        <img src="/img/html.png" alt="HTML">
-                        <span>HTML, CSS, JavaScript</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Seção 3: Bancos de Dados -->
-            <div class="skill-wrapper">
-                <h4>Bancos de Dados</h4>
-                <ul class="skill-list">
-                    <li>
-                        <img src="img/mysql.png" alt="MySQL">
-                        <span>MySQL/SQL</span>
-                    </li>
-                    <li>
-                        <img src="img/elephant.png" alt="PostgreSQL">
-                        <span>PostgreSQL</span>
-                    </li>
-                </ul>
-            </div>
-              <!-- Seção 4: APIs e Ferramentas -->
-               <div class="skill-wrapper">
-                <h4>APIs e Ferramentas</h4>
-                <ul class="skill-list">
-                    <li>
-                        <img src="img/api.png" alt="API Restful">
-                        <span>API Restful</span>
-                    </li>
-                    <li>
-                        <img src="img/postman.png" alt="Postman">
-                        <span>Postman</span>
-                    </li>
-                    <li>
-                        <img src="img/android.png" alt="Android Studio">
-                        <span>Android Studio</span>
-                    </li>
-                    <li>
-                        <img src="img/logo.png" alt="Visual Studio Code">
-                        <span>Visual Studio Code</span>
-                    </li>
-                </ul>
-            </div>
-
-               <!-- Seção 5: Ferramentas Office -->
-              <div class="skill-wrapper">
-                 <h4>Ferramentas Office</h4>
-                 <ul class="skill-list">
-                     <li>
-                         <img src="img/word.png" alt="Word">
-                        <span>Word</span>
-                    </li>
-                    <li>
-                        <img src="img/excel.png" alt="Excel">
-                        <span>Excel</span>
-                     </li>
-                     <li>
-                        <img src="img/powerpoint.png" alt="PowerPoint">
-                        <span>PowerPoint</span>
-                    </li>
-                  </ul>
-             </div>
-
-           <!-- Seção 6: Línguas -->
-           <div class="skill-wrapper">
-            <h4>Línguas</h4>
-            <ul class="skill-list">
-                <li>
-                    <i class="fas fa-flag" style="color: #007bff; font-size: 25px; margin-right: 5px"></i>
-                    <span>Português</span>
-                </li>
-                <li>
-                    <i class="fas fa-flag" style="color: #007bff; font-size: 25px; margin-right: 5px"></i>
-                    <span>Inglês</span>
-                </li>
-            </ul>
         </div>
-        </div>
-    </div>
-</section>
+    </section>
 
-    <!-- Seção Certificações -->
-   <section class="certifications py-5" id="certifications">
+    <!-- Certifications Section -->
+    <section class="certifications py-5" id="certifications">
         <div class="container">
-             <h2 class="text-center mb-4" style="font-weight: 700; color: #333;">Certificações</h2>
-              <p class="text-center mb-5" style="color: #555;">Meus Certificados</p>
-        <div class="row text-center">
-            <div class="col-md-3 mb-4">
-                <div class="contact-card">
-                    <img src="img/award.png" alt="Certificado Java" style="max-width: 50px;">
-                    <h5>Java</h5>
+            <h2 class="text-center mb-4" style="font-weight: 700; color: #333;">Certifications</h2>
+            <p class="text-center mb-5" style="color: #555;">My Certificates</p>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="contact-card">
+                        <img src="img/award.png" alt="Java Certificate" style="max-width: 50px;">
+                        <h5>Java</h5>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-3 mb-4">
-                <div class="contact-card">
-                    <img src="img/award.png" alt="NWL Expert" style="max-width: 50px;">
-                    <h5>NWL Expert - Trilha de Java</h5>
+                <div class="col-md-3 mb-4">
+                    <div class="contact-card">
+                        <img src="img/award.png" alt="NWL Expert" style="max-width: 50px;">
+                        <h5>NWL Expert - Java Track</h5>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-3 mb-4">
-               <div class="contact-card">
-                  <img src="img/award.png" alt="NWL Expert" style="max-width: 50px;">
-                 <h5>NWL Expert - Trilha de React</h5>
-               </div>
-            </div>
-
-           <div class="col-md-3 mb-4">
-                <div class="contact-card">
-                   <img src="img/award.png" alt="Juniper" style="max-width: 50px;">
-                   <h5>Redes Iniciante (Juniper)</h5>
+                <div class="col-md-3 mb-4">
+                    <div class="contact-card">
+                        <img src="img/award.png" alt="NWL Expert" style="max-width: 50px;">
+                        <h5>NWL Expert - React Track</h5>
+                    </div>
                 </div>
-           </div>
 
-            <div class="col-md-3 mb-4">
-                 <div class="contact-card">
-                    <img src="img/award.png" alt="Concuso" style="max-width: 50px;">
-                   <h5>Concurso de Desenvolvimento de um Sistema ERP - Livraria Funza</h5>
-                 </div>
+                <div class="col-md-3 mb-4">
+                    <div class="contact-card">
+                        <img src="img/award.png" alt="Juniper" style="max-width: 50px;">
+                        <h5>Beginner Networks (Juniper)</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                    <div class="contact-card">
+                        <img src="img/award.png" alt="Competition" style="max-width: 50px;">
+                        <h5>ERP System Development Competition - Funza Bookstore</h5>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-    <!-- Adicionar o link do FontAwesome -->
+    </section>
+    <!-- Add FontAwesome link -->
 
     <section class="projects" id="projects">
         <div class="container py-5">
-            <h2>Projetos</h2>
+            <h2>Projects</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="card mb-4">
-                         <img src="img/rm1.png" class="card-img-top" alt="Sistema de Gerenciamento de Livraria e ERP">
+                        <img src="img/rm1.png" class="card-img-top" alt="Library and ERP Management System">
                         <div class="card-body">
-                             <h5 class="card-title">Sistema de Gerenciamento de Livraria e ERP</h5>
-                            <p class="card-text">Uma aplicação completa para o gerenciamento de livrarias, incluindo controle de estoque, vendas, finanças, e emissão de relatórios.</p>
+                            <h5 class="card-title">Library and ERP Management System</h5>
+                            <p class="card-text">A complete application for managing libraries, including inventory control, sales, finance, and report generation.</p>
                         </div>
                         </a>
                     </div>
@@ -254,21 +246,22 @@
 
                 <div class="col-md-4">
                     <div class="card mb-4">
-                       <a href="https://tsolutions.onrender.com/autorizado/index" target="_blank"> <img src="img/rm2.png" class="card-img-top" alt="Sistema de Empréstimo">
-                        <div class="card-body">
-                            <h5 class="card-title">Triplece Solutions</h5>
-                            <p class="card-text">O site da Triplece Solutions, um  é o portal de uma startup que oferece consultoria e soluções inovadoras para empresas em diversas áreas..</p>
-                        </div>
+                        <a href="https://tsolutions.onrender.com/autorizado/index" target="_blank"> <img src="img/rm2.png"
+                                class="card-img-top" alt="Loan System">
+                            <div class="card-body">
+                                <h5 class="card-title">Triplece Solutions</h5>
+                                <p class="card-text">The Triplece Solutions website is the portal of a startup that offers consulting and innovative solutions for companies in various areas.</p>
+                            </div>
                         </a>
                     </div>
                 </div>
 
-                 <div class="col-md-4">
-                     <div class="card mb-4">
-                        <img src="img/Captura de Tela (103).png" class="card-img-top" alt="Quiz de Moçambique">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/Captura de Tela (103).png" class="card-img-top" alt="Mozambique Quiz">
                         <div class="card-body">
-                            <h5 class="card-title">Sistema de E-commerce</h5>
-                            <p class="card-text">O SGDE é um sistema completo para gestão de equipamentos, permitindo cadastrar detalhes, agendar e acompanhar manutenções, acessar histórico, gerar relatórios, gerenciar estoque de peças, receber alertas e utilizar em diversos dispositivos.</p>
+                            <h5 class="card-title">E-commerce System</h5>
+                            <p class="card-text">SGDE is a complete system for managing equipment, allowing to register details, schedule and monitor maintenance, access history, generate reports, manage parts inventory, receive alerts, and use on various devices.</p>
                         </div>
                         </a>
                     </div>
@@ -276,59 +269,61 @@
             </div>
         </div>
     </section>
-    <!-- Seção Contato -->
-<section class="contact" id="contact">
-    <div class="container">
-        <h2 class="text-center mb-4" style="font-weight: 700; color: #333;">Contato</h2>
-        <p class="text-center mb-5" style="color: #555;">Entre em contato comigo!</p>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-4" style="font-weight: 700; color: #333;">Contact</h2>
+            <p class="text-center mb-5" style="color: #555;">Get in touch with me!</p>
 
-        <div class="row text-center">
-            <div class="col-md-3 mb-4">
-                <div class="contact-card">
-                    <a href="mailto:dasilvafelton7@gmail.com" class="text-decoration-none" title="Enviar Email">
-                        <i class="fas fa-envelope fa-3x mb-2" style="color: #007bff;"></i>
-                        <h5>Email</h5>
-                    </a>
+            <div class="row text-center">
+                <div class="col-md-3 mb-4">
+                    <div class="contact-card">
+                        <a href="mailto:dasilvafelton7@gmail.com" class="text-decoration-none" title="Send Email">
+                            <i class="fas fa-envelope fa-3x mb-2" style="color: #007bff;"></i>
+                            <h5>Email</h5>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            
 
-            <div class="col-md-3 mb-4">
-                <div class="contact-card">
-                    <a href="https://wa.me/+2588845120809" class="text-decoration-none" target="_blank" title="Enviar WhatsApp">
-                        <i class="fab fa-whatsapp fa-3x mb-2" style="color: #25D366;"></i>
-                        <h5>WhatsApp</h5>
-                    </a>
+
+                <div class="col-md-3 mb-4">
+                    <div class="contact-card">
+                         <a href="https://wa.me/+2588845120809" class="text-decoration-none" target="_blank" title="Send WhatsApp">
+                            <i class="fab fa-whatsapp fa-3x mb-2" style="color: #25D366;"></i>
+                            <h5>WhatsApp</h5>
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-3 mb-4">
-                <div class="contact-card">
-                    <a href="https://www.linkedin.com/in/feltondasilva" class="text-decoration-none" target="_blank" title="Visitar LinkedIn">
-                        <i class="fab fa-linkedin fa-3x mb-2" style="color: #0077b5;"></i>
-                        <h5>LinkedIn</h5>
-                    </a>
+                <div class="col-md-3 mb-4">
+                    <div class="contact-card">
+                        <a href="https://www.linkedin.com/in/feltondasilva" class="text-decoration-none" target="_blank"
+                            title="Visit LinkedIn">
+                            <i class="fab fa-linkedin fa-3x mb-2" style="color: #0077b5;"></i>
+                            <h5>LinkedIn</h5>
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col-md-3 mb-4">
-                <div class="contact-card">
-                    <a href="https://github.com/Felton7JE" class="text-decoration-none" target="_blank" title="Visitar GitHub">
-                        <i class="fab fa-github fa-3x mb-2" style="color: #333;"></i>
-                        <h5>GitHub</h5>
-                    </a>
+                <div class="col-md-3 mb-4">
+                    <div class="contact-card">
+                         <a href="https://github.com/Felton7JE" class="text-decoration-none" target="_blank"
+                            title="Visit GitHub">
+                            <i class="fab fa-github fa-3x mb-2" style="color: #333;"></i>
+                            <h5>GitHub</h5>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- Rodapé -->
+    <!-- Footer -->
     <footer>
-        <p>© 2024 Felton da Silva - Todos os direitos reservados</p>
+        <p>© 2024 Felton da Silva - All rights reserved</p>
     </footer>
 
-    <!-- Script para o scroll suave -->
+    <!-- Smooth scroll script -->
     <script>
         document.querySelectorAll('nav ul li a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -336,13 +331,13 @@
                 const targetId = this.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
                 window.scrollTo({
-                    top: targetElement.offsetTop - 70, // Ajuste para compensar o header fixo
+                    top: targetElement.offsetTop - 70,
                     behavior: 'smooth'
                 });
             });
         });
 
-         const themeToggle = document.getElementById('theme-toggle');
+        const themeToggle = document.getElementById('theme-toggle');
         const body = document.body;
         const githubImgLight = document.querySelector('.github-img-light');
         const githubImgDark = document.querySelector('.github-img-dark');
@@ -352,19 +347,20 @@
 
 
         function updateTheme() {
-             if (body.classList.contains('dark-mode')) {
-                 themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-                 githubImgLight.style.display = 'none';
-                 githubImgDark.style.display = 'inline';
+            if (body.classList.contains('dark-mode')) {
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                githubImgLight.style.display = 'none';
+                githubImgDark.style.display = 'inline';
                  lightAnimation.style.display = 'none';
                 darkAnimation.style.display = 'block';
-             } else {
-                    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
-                    githubImgLight.style.display = 'inline';
-                    githubImgDark.style.display = 'none';
-                      lightAnimation.style.display = 'block';
+
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                githubImgLight.style.display = 'inline';
+                githubImgDark.style.display = 'none';
+                lightAnimation.style.display = 'block';
                  darkAnimation.style.display = 'none';
-                }
+            }
         }
 
 
@@ -374,24 +370,24 @@
             updateTheme();
 
         });
-          updateTheme()
+        updateTheme()
 
         const typingTextElement = document.querySelector('.typing-effect');
-        const textToType = "Olá! Sou Felton da Silva...!";
+        const textToType = "Hello! I'm Felton da Silva...!";
         let charIndex = 0;
 
         function typeText() {
             if (charIndex < textToType.length) {
                 typingTextElement.textContent += textToType.charAt(charIndex);
                 charIndex++;
-                setTimeout(typeText, 80); // Velocidade da digitação
+                setTimeout(typeText, 80);
             }
         }
 
-       typeText();
+        typeText();
     </script>
 
-    <!-- Script do Bootstrap -->
+    <!-- Bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 
 
