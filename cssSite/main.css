@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.35s linear;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.atom {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border-width: 8px 8px 0px 0px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: var(--color, #00ff00);
+    position: relative;
+    animation: animate 3s linear infinite;
+}
+
+.atom::before {
+    position: absolute;
+    content: '';
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: var(--color, lime);
+    right: 0;
+    top: 4px;
+    box-shadow: 0 0 32px 4px var(--color, lime);
+}
+
+.animation:nth-child(1) {
+    --color: #ffd700;
+    transform: translateX(50%);
+}
+
+.animation:nth-child(2) {
+    --color: #00008B;
+    transform: translateX(-50%) rotateZ(180deg);
+}
+
+@keyframes animate {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+
+}
